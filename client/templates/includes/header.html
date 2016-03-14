@@ -1,0 +1,16 @@
+<template name="header">
+  <div class="masthead clearfix">
+    <div class="inner">
+      <h3 class="masthead-brand">Cover</h3>
+      <nav>
+        <ul class="nav masthead-nav">
+          <li class="active"><a href="#">Home</a></li>
+          {{#if isInRole 'admin' 'default-group'}}
+            <li><a href="exercise">Exercise</a></li>
+          {{/if}}
+          <li>{{> loginButtons}}</li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</template>
