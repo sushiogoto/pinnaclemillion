@@ -1,5 +1,5 @@
 Meteor.publish('exercises', function() {
-  return Exercises.find();
+  return Exercises.find({});
 })
 
 Meteor.publish('secrets', function (group) {
