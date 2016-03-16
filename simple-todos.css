@@ -157,6 +157,10 @@ body {
  * Affix and center
  */
 
+.increment-weight {
+  margin: 20px;
+}
+
 @media (min-width: 768px) {
   /* Pull out the header and footer */
   .masthead {
