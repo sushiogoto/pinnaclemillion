@@ -54,6 +54,10 @@ body {
   margin-left: auto;
 }
 
+.total-lifted {
+  font-size: 70pt;
+}
+
 /* Padding for spacing */
 .inner {
   padding: 30px;

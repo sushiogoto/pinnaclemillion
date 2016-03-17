@@ -1,5 +1,3 @@
-Session.setDefault('counter', 0);
-
 Template.exercise.helpers({
   totalWeightMoved: function () {
     return Exercises.find().fetch()[0].totalWeightMoved;
