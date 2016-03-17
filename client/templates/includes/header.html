@@ -8,6 +8,9 @@
           {{#if isInRole 'admin' 'default-group'}}
             <li class="{{#if isCurrentPage 'exercise'}}active{{/if}}"><a href="exercise">Exercise</a></li>
           {{/if}}
+          {{#if isInRole 'admin' 'default-group'}}
+            <li class="{{#if isCurrentPage 'settings'}}active{{/if}}"><a href="settings">Settings</a></li>
+          {{/if}}
           <li>{{> loginButtons}}</li>
         </ul>
       </nav>
