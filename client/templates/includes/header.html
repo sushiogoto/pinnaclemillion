@@ -1,12 +1,12 @@
 <template name="header">
   <div class="masthead clearfix">
     <div class="inner">
-      <h3 class="masthead-brand">Pinnacle</h3>
+      <h3 class="masthead-brand"><img src="images/pinnacle_logo.png" alt=""></h3>
       <nav>
         <ul class="nav masthead-nav">
-          <li class="active"><a href="/">Home</a></li>
+          <li class="{{#if isCurrentPage 'landing'}}active{{/if}}"><a href="/">Home</a></li>
           {{#if isInRole 'admin' 'default-group'}}
-            <li><a href="exercise">Exercise</a></li>
+            <li class="{{#if isCurrentPage 'exercise'}}active{{/if}}"><a href="exercise">Exercise</a></li>
           {{/if}}
           <li>{{> loginButtons}}</li>
         </ul>
